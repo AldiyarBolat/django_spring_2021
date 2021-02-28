@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="main-content">
+        {% block title %}
+            <h1>Completed Tasks in 'List {{ list_id }}'</h1>
+        {% endblock %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Created</th>
+                    <th>Due on</th>
+                    <th>Owner</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for list_item in todo_list %}
+                    {% block row %}
+                        <tr>
+                            <td><a href="">{{ list_item.name }}</a></td>
+                            <td>{{ list_item.created_at }}</td>
+                            <td>{{ list_item.due_date }}</td>
+                            <td>{{ list_item.owner }}</td>
+                            <td><button class="type-btn">Not Done</button></td>
+                        </tr>
+                    {% endblock %}
+                {% endfor %}
+            </tbody>
+        </table>
+        {% block switch %}
+            <button class="switch-btn">View incomplete tasks</button>
+        {% endblock %}
+        <button class="delete-btn">Delete this list</button>
+    </div>
+{% endblock %}
