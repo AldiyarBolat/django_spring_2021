@@ -1,0 +1,51 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+button {
+    border: none;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+    border-top: 1px solid #dbdbdb;
+}
+.line{
+    border: 1px solid gray;
+}
+.main-content{
+    padding: 2% 15% 0;
+}
+.add-task-btn {
+    background-color: blue;
+}
+.type-btn{
+    background-color: green;
+}
+.switch-btn {
+    margin-top: 15px;
+    background-color: yellow;
+    color: black;
+}
+.delete-btn {
+    background-color: red;
+    margin-top: 15px;
+}

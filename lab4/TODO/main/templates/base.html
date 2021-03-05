@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <header>DFDjango TODO</header>
+    <div class="main-content">
+        <button class="add-task-btn">Add Task</button>
+        <div class="line"></div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
